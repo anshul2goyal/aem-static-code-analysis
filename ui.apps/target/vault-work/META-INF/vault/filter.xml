@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/business"/>
+    <filter root="/apps/sling"/>
+    <filter root="/etc/packages/adobe/cq60/core.wcm.components.all-2.2.0.zip"/>
+</workspaceFilter>

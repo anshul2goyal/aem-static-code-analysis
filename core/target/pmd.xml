@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.9.0" timestamp="2018-11-19T12:46:22.328">
+<file name="/Applications/_workspaces/AEM/business/core/src/main/java/business/core/schedulers/SimpleScheduledTask.java">
+<violation beginline="37" endline="51" begincolumn="19" endcolumn="5" rule="UnnecessaryModifier" ruleset="Code Style" package="business.core.schedulers" class="SimpleScheduledTask" externalInfoUrl="https://pmd.github.io/pmd-6.9.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'static' on annotation 'Config': nested annotation types are implicitly static
+</violation>
+</file>
+<file name="/Applications/_workspaces/AEM/business/core/src/main/java/business/core/servlets/SimpleServlet.java">
+<violation beginline="25" endline="25" begincolumn="1" endcolumn="46" rule="UnusedImports" ruleset="Best Practices" package="business.core.servlets" class="SimpleServlet" externalInfoUrl="https://pmd.github.io/pmd-6.9.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.apache.sling.api.resource.ValueMap'
+</violation>
+</file>
+</pmd>

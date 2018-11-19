@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="/Applications/_workspaces/AEM/business/it.launcher/src/main/java/business/it/launcher/package-info.java">
+<error line="17" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+</checkstyle>

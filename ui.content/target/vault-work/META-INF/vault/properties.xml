@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>business - UI content</comment>
+<entry key="createdBy">anshulgoyal</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">business.ui.content</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2018-11-18T20:54:42.054+0000</entry>
+<entry key="groupId">ie.aib.cq</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="packageType">content</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">ie.aib.cq</entry>
+<entry key="description">UI content package for business</entry>
+<entry key="artifactId">business.ui.content</entry>
+</properties>

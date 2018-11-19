@@ -1,0 +1,5 @@
+/Applications/_workspaces/AEM/business/core/src/test/java/business/core/schedulers/SimpleScheduledTaskTest.java
+/Applications/_workspaces/AEM/business/core/src/test/java/business/core/servlets/SimpleServletTest.java
+/Applications/_workspaces/AEM/business/core/src/test/java/business/core/models/HelloWorldModelTest.java
+/Applications/_workspaces/AEM/business/core/src/test/java/business/core/filters/LoggingFilterTest.java
+/Applications/_workspaces/AEM/business/core/src/test/java/business/core/listeners/SimpleResourceListenerTest.java

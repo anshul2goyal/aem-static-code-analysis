@@ -1,0 +1,1 @@
+src/test/javascript :rsrc/test/javascript

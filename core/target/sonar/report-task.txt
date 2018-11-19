@@ -1,0 +1,6 @@
+projectKey=ie.aib.cq:business.core
+serverUrl=http://localhost:9000
+serverVersion=7.4.0.18908
+dashboardUrl=http://localhost:9000/dashboard?id=ie.aib.cq%3Abusiness.core
+ceTaskId=AWcsBP16jATnDeOfv65l
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWcsBP16jATnDeOfv65l

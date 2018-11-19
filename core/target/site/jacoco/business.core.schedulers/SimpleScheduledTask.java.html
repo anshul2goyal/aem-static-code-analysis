@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SimpleScheduledTask.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">business - Core</a> &gt; <a href="index.source.html" class="el_package">business.core.schedulers</a> &gt; <span class="el_source">SimpleScheduledTask.java</span></div><h1>SimpleScheduledTask.java</h1><pre class="source lang-java linenums">/*
+ *  Copyright 2015 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+package business.core.schedulers;
+
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * A simple demo for cron-job like tasks that get executed regularly.
+ * It also demonstrates how property values can be set. Users can
+ * set the property values in /system/console/configMgr
+ */
+@Designate(ocd = SimpleScheduledTask.Config.class)
+@Component(service = Runnable.class)
+<span class="fc" id="L33">public class SimpleScheduledTask implements Runnable {</span>
+	/**Simple demo for cron-job like task with properties*/
+    @ObjectClassDefinition(name = &quot;A scheduled task&quot;,
+                           description = &quot;Simple demo for cron-job like task with properties&quot;)
+    public static @interface Config {
+    	/** Scheduler cron job expression. */
+        @AttributeDefinition(name = &quot;Cron-job expression&quot;)
+        String scheduler_expression() default &quot;*/30 * * * * ?&quot;;
+        
+        /**config to check whether or not to schedule this task concurrently*/ 
+        @AttributeDefinition(name = &quot;Concurrent task&quot;,
+                             description = &quot;Whether or not to schedule this task concurrently&quot;)
+        boolean scheduler_concurrent() default false;
+
+        //Can be configured in /system/console/configMgr
+        @AttributeDefinition(name = &quot;A parameter&quot;,
+                             description = &quot;Can be configured in /system/console/configMgr&quot;)
+        String myParameter() default &quot;&quot;;
+    }
+
+<span class="fc" id="L53">    private static final Logger Logger = LoggerFactory.getLogger(SimpleScheduledTask.class);</span>
+
+    private String myParameter;
+    
+    @Override
+    public void run() {
+<span class="fc" id="L59">        Logger.debug(&quot;SimpleScheduledTask is now running, myParameter='{}'&quot;, myParameter);</span>
+<span class="fc" id="L60">    }</span>
+
+    @Activate
+    protected void activate(final Config config) {
+<span class="fc" id="L64">        myParameter = config.myParameter();</span>
+<span class="fc" id="L65">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

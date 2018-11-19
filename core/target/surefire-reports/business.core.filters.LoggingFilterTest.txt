@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: business.core.filters.LoggingFilterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.844 s - in business.core.filters.LoggingFilterTest

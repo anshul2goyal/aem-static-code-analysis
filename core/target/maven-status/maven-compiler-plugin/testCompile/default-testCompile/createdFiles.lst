@@ -1,0 +1,5 @@
+business/core/schedulers/SimpleScheduledTaskTest.class
+business/core/filters/LoggingFilterTest.class
+business/core/listeners/SimpleResourceListenerTest.class
+business/core/servlets/SimpleServletTest.class
+business/core/models/HelloWorldModelTest.class
