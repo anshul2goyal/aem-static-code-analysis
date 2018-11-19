@@ -1,0 +1,1 @@
+# aem-static-code-analysis
